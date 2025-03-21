@@ -19,15 +19,15 @@ namespace Monogame._2
         public Enemy(Texture2D texture){
             this.texture = texture;
             Random rand = new Random();
-            int size = rand.Next(10, 50);
+            int size = rand.Next(120);
             speed = rand.NextFloat(5, 100);
-            position.X = rand.NextFloat(0, 750);
+            position.X = rand.NextFloat(100, 650);
             position.Y = -50;
             hitbox = new ((int) position.X, (int) position.Y, size, size);
         }
 
         public void Update(){
-            position.Y += speed*1f/60f;
+            position.Y += speed*1f/50f;
 
             hitbox.Location = position.ToPoint();
         }

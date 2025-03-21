@@ -14,10 +14,10 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
 
     private Player player;
-    private Texture2D spaceShip;
-    private Texture2D enemyspaceship;
+    private Texture2D dacia;
+    private Texture2D alberg;
     private Texture2D backgrundbild;
-    private Texture2D Ufo;
+    private Texture2D volvo;
     private List<Enemy> enemies = new List<Enemy>();
     Song theme; 
 
@@ -40,19 +40,19 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
-        spaceShip = Content.Load<Texture2D>("spaceship");
+        alberg = Content.Load<Texture2D>("Alberg");
 
-        enemyspaceship = Content.Load<Texture2D>("enemyspaceship");
+        dacia = Content.Load<Texture2D>("Dacia");
 
-        Ufo = Content.Load<Texture2D>("ufoEnemy");
+        volvo = Content.Load<Texture2D>("Volvo");
 
-        backgrundbild = Content.Load<Texture2D>("background-road.png");
+        backgrundbild = Content.Load<Texture2D>("background-road");
 
-        player = new Player(spaceShip,new Vector2(380,350),50);
+        player = new Player(dacia,new Vector2(380,350),150);
 
-        enemies.Add(new Enemy(enemyspaceship));
+        enemies.Add(new Enemy(alberg));
         
-        theme = Content.Load<Song>("themesong1");
+        theme = Content.Load<Song>("gpsmusic");
         MediaPlayer.Play(theme);
 
     }
@@ -95,10 +95,10 @@ public class Game1 : Game
     private void SpawnEnemy(){
         Random rand = new Random();
         int value = rand.Next(1,101);
-        int spawnChancePercent = 2;
+        int spawnChancePercent = 1;
         if(value<=spawnChancePercent) {
-            enemies.Add(new Enemy(enemyspaceship));
-            enemies.Add(new Enemy(Ufo));
+            enemies.Add(new Enemy(alberg));
+            enemies.Add(new Enemy(volvo));
         }
     }
 
@@ -107,8 +107,7 @@ for(int i = 0; i <enemies.Count; i++){
     for(int j = 0; j <player.Bullets.Count; j++){
         if(enemies[i].Hitbox.Intersects(player.Bullets[j].Hitbox)){
             enemies.RemoveAt(i);
-            player.Bullets.RemoveAt(j);
-            i--;  
+            player.Bullets.RemoveAt(j);  
         }
     }
 
