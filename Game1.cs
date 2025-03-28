@@ -48,7 +48,7 @@ public class Game1 : Game
 
         backgrundbild = Content.Load<Texture2D>("background-road");
 
-        player = new Player(dacia,new Vector2(380,350),150);
+        player = new Player(dacia,new Vector2(380,250),150);
 
         enemies.Add(new Enemy(alberg));
         

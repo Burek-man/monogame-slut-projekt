@@ -29,7 +29,7 @@ namespace spaceshhoter
             this.texture = texture;
             this.position = position;
             hitbox = new Rectangle((int)position.X,(int)position.Y,
-            pixelSize,pixelSize);
+            pixelSize,(int)(pixelSize*1.5f));
 
         }
     public void Update(){
@@ -47,7 +47,7 @@ namespace spaceshhoter
     private void Shoot(){
         
         if((newKstate.IsKeyDown(Keys.Space) && oldkState.IsKeyUp(Keys.Space)) || newKstate.IsKeyDown(Keys.W)){
-            bullet bullet = new bullet(texture,position); 
+            bullet bullet = new bullet(texture,new(position.X + hitbox.Width/2, position.Y+30)); 
             bullets.Add(bullet);
         }
     }

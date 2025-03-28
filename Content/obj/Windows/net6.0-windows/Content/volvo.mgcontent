@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/volvo.png</SourceFile>
-  <SourceTime>2025-03-19T09:52:58.6543353+01:00</SourceTime>
+  <SourceTime>2025-03-28T11:00:54.4263465+01:00</SourceTime>
   <DestFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/bin/Windows/Content/volvo.xnb</DestFile>
-  <DestTime>2025-03-21T09:58:31.791459+01:00</DestTime>
+  <DestTime>2025-03-28T11:01:45.2793832+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
