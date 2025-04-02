@@ -94,8 +94,8 @@ public class Game1 : Game
     }
     private void SpawnEnemy(){
         Random rand = new Random();
-        int value = rand.Next(1,101);
-        int spawnChancePercent = 1;
+        int value = rand.Next(1,1001);
+        int spawnChancePercent = 5;
         if(value<=spawnChancePercent) {
             enemies.Add(new Enemy(alberg));
             enemies.Add(new Enemy(volvo));
@@ -107,7 +107,8 @@ for(int i = 0; i <enemies.Count; i++){
     for(int j = 0; j <player.Bullets.Count; j++){
         if(enemies[i].Hitbox.Intersects(player.Bullets[j].Hitbox)){
             enemies.RemoveAt(i);
-            player.Bullets.RemoveAt(j);  
+            player.Bullets.RemoveAt(j);
+            break;  
         }
     }
 

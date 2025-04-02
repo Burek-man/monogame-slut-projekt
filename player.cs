@@ -46,7 +46,7 @@ namespace spaceshhoter
 
     private void Shoot(){
         
-        if((newKstate.IsKeyDown(Keys.Space) && oldkState.IsKeyUp(Keys.Space)) || newKstate.IsKeyDown(Keys.W)){
+        if((newKstate.IsKeyDown(Keys.Space) && oldkState.IsKeyUp(Keys.Space)) || newKstate.IsKeyDown(Keys.E)){
             bullet bullet = new bullet(texture,new(position.X + hitbox.Width/2, position.Y+30)); 
             bullets.Add(bullet);
         }
@@ -55,10 +55,16 @@ namespace spaceshhoter
     
 
         if(newKstate.IsKeyDown(Keys.A)){
-            position.X -= 1;
+            position.X -= 5;
         }
         else if(newKstate.IsKeyDown(Keys.D)){
-            position.X +=1;
+            position.X +=5;
+        }
+        if(newKstate.IsKeyDown(Keys.W)){
+            position.Y -= 5;
+        }
+        else if(newKstate.IsKeyDown(Keys.S)){
+            position.Y +=5;
         }
         hitbox.Location = position.ToPoint();
     }

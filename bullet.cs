@@ -23,7 +23,7 @@ namespace spaceshhoter
 
         public void Update(){
             float speed =50;
-            position.Y -= speed*1f/60f;
+            position.Y -= speed*1f/50f;
 
             hitbox.Location = position.ToPoint();
         }
