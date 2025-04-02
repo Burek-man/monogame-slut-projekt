@@ -4,20 +4,12 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/../../../../Downloads/background-road.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/Alberg.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/background-road.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/dacia.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/gpsmusic.mp3</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/spaceship.png</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/themesong1.ogg</File>
-    <File>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/volvo.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/monoNY/Content/Alberg.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/monoNY/Content/background-road.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/monoNY/Content/dacia.png</File>
+    <File>C:/Users/Admin/Documents/GitHub/monoNY/Content/gpsmusic.mp3</File>
   </SourceFiles>
   <DestFiles>
-    <File>background-road.png</File>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
