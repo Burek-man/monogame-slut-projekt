@@ -30,13 +30,7 @@ namespace spaceshhoter
 
         public void Draw(SpriteBatch spriteBatch){
 
-        Color myColor;
-        Color startColor = new Color(250, 250, 250);
-        Color finalColor = new Color(231, 214, 90);
-        myColor = Color.Lerp(startColor, finalColor, 0.5f);
-
-        spriteBatch.Draw(texture, Vector2.Zero, myColor);
-
+        
     }
   }
 }
