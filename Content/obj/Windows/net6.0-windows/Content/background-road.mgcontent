@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Admin/Documents/GitHub/monoNY/Content/background-road.png</SourceFile>
+  <SourceFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/background-road.png</SourceFile>
   <SourceTime>2025-03-19T09:41:56.8036533+01:00</SourceTime>
-  <DestFile>C:/Users/Admin/Documents/GitHub/monoNY/Content/bin/Windows/Content/background-road.xnb</DestFile>
-  <DestTime>2025-04-02T09:50:33.8813899+02:00</DestTime>
+  <DestFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/bin/Windows/Content/background-road.xnb</DestFile>
+  <DestTime>2025-04-02T09:59:47.2136165+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
