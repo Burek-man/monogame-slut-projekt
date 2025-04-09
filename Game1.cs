@@ -16,8 +16,8 @@ public class Game1 : Game
     private Player player;
     private Texture2D dacia;
     private Texture2D alberg;
-    private Texture2D backgrundbild;
-    private Texture2D volvo;
+
+
     private List<Enemy> enemies = new List<Enemy>();
     Song theme; 
 
@@ -43,10 +43,6 @@ public class Game1 : Game
         alberg = Content.Load<Texture2D>("Alberg");
 
         dacia = Content.Load<Texture2D>("Dacia");
-
-        volvo = Content.Load<Texture2D>("Volvo");
-
-        backgrundbild = Content.Load<Texture2D>("background-road");
 
         player = new Player(dacia,new Vector2(380,250),150);
 
@@ -81,7 +77,6 @@ public class Game1 : Game
 
         _spriteBatch.Begin();
         Rectangle bgRect = new(0, 0, 800, 600);
-        _spriteBatch.Draw(backgrundbild, bgRect, Microsoft.Xna.Framework.Color.White);
         player.Draw(_spriteBatch);
         foreach(Enemy Enemy in enemies)
         Enemy.Draw(_spriteBatch);
@@ -98,7 +93,6 @@ public class Game1 : Game
         int spawnChancePercent = 5;
         if(value<=spawnChancePercent) {
             enemies.Add(new Enemy(alberg));
-            enemies.Add(new Enemy(volvo));
         }
     }
 

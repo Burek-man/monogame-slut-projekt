@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\monogame1.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\monoNY\\monogame1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\monogame1.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\monoNY\\monogame1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\monogame1.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\monoNY\\monogame1.csproj",
         "projectName": "monogame1",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\monogame1.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\monoNY\\monogame1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\monoNY\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
