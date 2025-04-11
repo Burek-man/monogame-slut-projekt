@@ -10,12 +10,13 @@ namespace spaceshhoter;
 
 public class Game1 : Game
 {
+    private Texture2D backround;
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-
     private Player player;
     private Texture2D dacia;
     private Texture2D alberg;
+    private Camera camera;
 
 
     private List<Enemy> enemies = new List<Enemy>();
@@ -30,8 +31,7 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
-
+        camera = new Camera(GraphicsDevice.Viewport);
         base.Initialize();
     }
 
@@ -39,6 +39,7 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+        backround = Content.Load<Texture2D>("background-road");
 
         alberg = Content.Load<Texture2D>("Alberg");
 
@@ -59,34 +60,38 @@ public class Game1 : Game
             Exit();
 
         
+             player.Update();
+        camera.UpdateCamera(GraphicsDevice.Viewport,player.Hitbox.Location.ToVector2());
 
-        player.Update();
-        foreach(Enemy Enemy in enemies){
-            Enemy.Update();
-        }
+
 
         enemybulletCollision();
 
         SpawnEnemy();
         base.Update(gameTime);
-    }  
+    }
 
-    protected override void Draw(GameTime gameTime)
-    {
-        GraphicsDevice.Clear(Color.White);
+    protected override void Draw(GameTime gameTime){
 
-        _spriteBatch.Begin();
-        Rectangle bgRect = new(0, 0, 800, 600);
+        
+        GraphicsDevice.Clear(new Color(0x666666));
+        
+        _spriteBatch.Begin(SpriteSortMode.Deferred,null,null,null,null,null,camera.Transform);
+        for(int i = -100; i < 100; i++) {
+            Rectangle bgRect = new(0, 600*i, 800, 600);
+            _spriteBatch.Draw(backround, bgRect, Color.White);
+        }
+        
         player.Draw(_spriteBatch);
-        foreach(Enemy Enemy in enemies)
-        Enemy.Draw(_spriteBatch);
+
+       
 
         _spriteBatch.End();
-
-
-
         base.Draw(gameTime);
+
     }
+
+
     private void SpawnEnemy(){
         Random rand = new Random();
         int value = rand.Next(1,1001);

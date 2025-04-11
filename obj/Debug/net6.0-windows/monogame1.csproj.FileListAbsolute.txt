@@ -48,10 +48,6 @@ C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\C
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\Alberg.xnb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\background-road.xnb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\dacia.xnb
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\spaceship.xnb
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\themesong1.wma
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\themesong1.xnb
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\volvo.xnb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\monogame1.exe
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\monogame1.deps.json
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\monogame1.runtimeconfig.json

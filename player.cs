@@ -12,9 +12,9 @@ namespace spaceshhoter
         private Vector2 position;
         private Rectangle hitbox;
         private KeyboardState newKstate;
-        
-         private KeyboardState oldkState;
-         private float hp;
+        private float speed = 0;
+        private KeyboardState oldkState;
+        private float hp;
 
         private List<bullet> bullets = new List<bullet>();
 
@@ -23,6 +23,10 @@ namespace spaceshhoter
         }
         public float Hp{
             get{return hp;}
+        }
+
+        public Rectangle Hitbox{
+            get{return hitbox;}
         }
 
         public Player(Texture2D texture, Vector2 position, int pixelSize){
@@ -51,9 +55,9 @@ namespace spaceshhoter
             bullets.Add(bullet);
         }
     }
+
     private void Move(){
     
-
         if(newKstate.IsKeyDown(Keys.A)){
             position.X -= 5;
         }
@@ -61,12 +65,22 @@ namespace spaceshhoter
             position.X +=5;
         }
         if(newKstate.IsKeyDown(Keys.W)){
-            position.Y -= 5;
+            speed += 0.3f;
         }
         else if(newKstate.IsKeyDown(Keys.S)){
-            position.Y +=5;
+            speed -= 0.3f;
         }
+
+        position.Y -= speed;
+
+        if (speed > 0) 
+        speed -= 0.1f;
+        else if (speed < 0)
+        speed += 0.1f;
+        
+        
         hitbox.Location = position.ToPoint();
+
     }
 
 

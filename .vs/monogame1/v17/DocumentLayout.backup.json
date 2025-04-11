@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9021232-40AF-49E6-9272-4EB69419CE6A}|monogame1.csproj|c:\\users\\admin\\documents\\github\\monogame-slut-projekt\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9021232-40AF-49E6-9272-4EB69419CE6A}|monogame1.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9021232-40AF-49E6-9272-4EB69419CE6A}|monogame1.csproj|c:\\users\\admin\\documents\\github\\monogame-slut-projekt\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9021232-40AF-49E6-9272-4EB69419CE6A}|monogame1.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "camera.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\camera.cs",
+              "RelativeDocumentMoniker": "camera.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\camera.cs",
+              "RelativeToolTip": "camera.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:57:08.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\Game1.cs",
+              "RelativeDocumentMoniker": "Game1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\monogame-slut-projekt\\Game1.cs*",
+              "RelativeToolTip": "Game1.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAD4v0wAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:54:03.037Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
