@@ -49,9 +49,9 @@
 /processorParam:TextureFormat=Color
 /build:dacia.png
 
-#begin gpsmusic.mp3
+#begin youtube_tjvz3ZHx5Ls_audio.mp3
 /importer:Mp3Importer
 /processor:SongProcessor
 /processorParam:Quality=Best
-/build:gpsmusic.mp3
+/build:youtube_tjvz3ZHx5Ls_audio.mp3
 

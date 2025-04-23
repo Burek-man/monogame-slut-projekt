@@ -58,6 +58,7 @@ namespace spaceshhoter
 
     private void Move(){
     
+        bool accel = false;
         if(newKstate.IsKeyDown(Keys.A)){
             position.X -= 5;
         }
@@ -66,21 +67,35 @@ namespace spaceshhoter
         }
         if(newKstate.IsKeyDown(Keys.W)){
             speed += 0.3f;
+            accel = true;
         }
         else if(newKstate.IsKeyDown(Keys.S)){
             speed -= 0.3f;
+            accel = true;
         }
 
         position.Y -= speed;
+        SlowDown(accel);
+        
+        if (speed > 20)
+            speed = 20;
 
-        if (speed > 0) 
-        speed -= 0.1f;
-        else if (speed < 0)
-        speed += 0.1f;
-        
-        
+        if (speed < -20)
+            speed = -20;
+
         hitbox.Location = position.ToPoint();
 
+    }
+
+    private void SlowDown(bool accel){
+        if(accel){
+            return;
+        }
+
+        if (speed > 0) 
+            speed -= 0.1f;
+        else if (speed < 0)
+            speed += 0.1f;
     }
 
 

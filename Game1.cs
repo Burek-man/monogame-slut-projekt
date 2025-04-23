@@ -49,7 +49,7 @@ public class Game1 : Game
 
         enemies.Add(new Enemy(alberg));
         
-        theme = Content.Load<Song>("gpsmusic");
+        theme = Content.Load<Song>("youtube_tjvz3ZHx5Ls_audio");
         MediaPlayer.Play(theme);
 
     }

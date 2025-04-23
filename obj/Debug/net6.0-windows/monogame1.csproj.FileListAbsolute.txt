@@ -86,8 +86,6 @@ C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\obj\Debug\net6.0-windows\r
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\obj\Debug\net6.0-windows\monogame1.pdb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\obj\Debug\net6.0-windows\monogame1.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\obj\Debug\net6.0-windows\ref\monogame1.dll
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\gpsmusic.wma
-C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\gpsmusic.xnb
 C:\Users\Admin\Documents\GitHub\monoNY\bin\Debug\net6.0-windows\Content\enemyspaceship.xnb
 C:\Users\Admin\Documents\GitHub\monoNY\bin\Debug\net6.0-windows\Content\ExK_qcgVIAIOLwR.xnb
 C:\Users\Admin\Documents\GitHub\monoNY\bin\Debug\net6.0-windows\Content\ufoEnemy.xnb
@@ -134,3 +132,5 @@ C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\refint\monogame1
 C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\monogame1.pdb
 C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\monogame1.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\ref\monogame1.dll
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\youtube_tjvz3ZHx5Ls_audio.wma
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\youtube_tjvz3ZHx5Ls_audio.xnb
