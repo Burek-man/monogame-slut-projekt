@@ -49,6 +49,13 @@
 /processorParam:TextureFormat=Color
 /build:dacia.png
 
+#begin File1.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:File1.spritefont
+
 #begin geneva-dacia-dusterjpeg.jpeg
 /importer:TextureImporter
 /processor:TextureProcessor

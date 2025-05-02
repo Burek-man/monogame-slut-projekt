@@ -134,3 +134,5 @@ C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\monogame1.genrun
 C:\Users\Admin\Documents\GitHub\monoNY\obj\Debug\net6.0-windows\ref\monogame1.dll
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\youtube_tjvz3ZHx5Ls_audio.wma
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\youtube_tjvz3ZHx5Ls_audio.xnb
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\geneva-dacia-dusterjpeg.xnb
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\File1.xnb

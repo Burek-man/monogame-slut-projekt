@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms.VisualStyles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -17,6 +18,17 @@ public class Game1 : Game
     private Texture2D dacia;
     private Texture2D alberg;
     private Camera camera;
+    private GameStates _gameState;
+    private SpriteFont meny;
+    private Texture2D backroundtexturemeny;
+
+
+    public enum GameStates{
+        Menu,
+        Playing,
+        Paused,
+        GameOver,
+    }
 
 
     private List<Enemy> enemies = new List<Enemy>();
@@ -44,6 +56,8 @@ public class Game1 : Game
         alberg = Content.Load<Texture2D>("Alberg");
 
         dacia = Content.Load<Texture2D>("Dacia");
+
+        backroundtexturemeny = Content.Load<Texture2D>("geneva-dacia-dusterjpeg");
 
         player = new Player(dacia,new Vector2(380,250),150);
 
@@ -73,9 +87,22 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime){
 
-        
+        _spriteBatch.Begin();
         GraphicsDevice.Clear(new Color(0x666666));
-        
+
+        if(_gameState == GameStates.Menu){
+
+        Rectangle bgRect = new(0,0,800,480);
+        _spriteBatch.Draw(backroundtexturemeny, bgRect, Color.White);  bc  
+        _spriteBatch.DrawString(meny, "Dacia Duster The Game", new Vector2(225,100), Color.Azure); 
+        }
+        else if(_gameState== GameStates.Playing || _gameState == GameStates.GameOver){
+        Rectangle bgRect = new(0,0,800,480);
+        _spriteBatch.Draw(backround, bgRect,Color.White);
+       
+        }
+
+
         _spriteBatch.Begin(SpriteSortMode.Deferred,null,null,null,null,null,camera.Transform);
         for(int i = -100; i < 100; i++) {
             Rectangle bgRect = new(0, 600*i, 800, 600);
@@ -83,6 +110,9 @@ public class Game1 : Game
         }
         
         player.Draw(_spriteBatch);
+
+
+
 
        
 
