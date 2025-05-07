@@ -36,7 +36,10 @@ public class Game1 : Game
 
     public Game1()
     {
-        _graphics = new GraphicsDeviceManager(this);
+        GraphicsDeviceManager graphics;
+        graphics = new GraphicsDeviceManager(this);
+        graphics.ToggleFullScreen();
+
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
@@ -58,6 +61,8 @@ public class Game1 : Game
         dacia = Content.Load<Texture2D>("Dacia");
 
         backroundtexturemeny = Content.Load<Texture2D>("geneva-dacia-dusterjpeg");
+
+        meny = Content.Load<SpriteFont>("File1");
 
         player = new Player(dacia,new Vector2(380,250),150);
 
@@ -90,10 +95,11 @@ public class Game1 : Game
         _spriteBatch.Begin();
         GraphicsDevice.Clear(new Color(0x666666));
 
-        if(_gameState == GameStates.Menu){
+        if (_gameState == GameStates.Menu)
+        {
 
         Rectangle bgRect = new(0,0,800,480);
-        _spriteBatch.Draw(backroundtexturemeny, bgRect, Color.White);  bc  
+        _spriteBatch.Draw(backroundtexturemeny, bgRect, Color.White);   
         _spriteBatch.DrawString(meny, "Dacia Duster The Game", new Vector2(225,100), Color.Azure); 
         }
         else if(_gameState== GameStates.Playing || _gameState == GameStates.GameOver){
@@ -101,6 +107,9 @@ public class Game1 : Game
         _spriteBatch.Draw(backround, bgRect,Color.White);
        
         }
+        _spriteBatch.End();
+
+
 
 
         _spriteBatch.Begin(SpriteSortMode.Deferred,null,null,null,null,null,camera.Transform);
@@ -112,9 +121,6 @@ public class Game1 : Game
         player.Draw(_spriteBatch);
 
 
-
-
-       
 
         _spriteBatch.End();
         base.Draw(gameTime);
@@ -143,5 +149,9 @@ for(int i = 0; i <enemies.Count; i++){
 
 }
 }
+
+
+
+
 
 }
