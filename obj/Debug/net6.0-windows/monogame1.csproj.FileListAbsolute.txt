@@ -136,3 +136,6 @@ C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\C
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\youtube_tjvz3ZHx5Ls_audio.xnb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\geneva-dacia-dusterjpeg.xnb
 C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\File1.xnb
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\needle.xnb
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\speedometerDial.xnb
+C:\Users\Admin\Documents\GitHub\monogame-slut-projekt\bin\Debug\net6.0-windows\Content\font.xnb

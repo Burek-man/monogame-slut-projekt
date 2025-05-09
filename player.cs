@@ -16,14 +16,8 @@ namespace spaceshhoter
         private KeyboardState oldkState;
         private float hp;
 
-        private List<bullet> bullets = new List<bullet>();
 
-        public List<bullet> Bullets{
-            get{return bullets;}
-        }
-        public float Hp{
-            get{return hp;}
-        }
+ 
 
         public Rectangle Hitbox{
             get{return hitbox;}
@@ -39,22 +33,15 @@ namespace spaceshhoter
     public void Update(){
         newKstate = Keyboard.GetState();
        Move();
-       Shoot();
+       
         oldkState = newKstate;
 
-       foreach(bullet b in bullets){
-        b.Update();
-       }
+       
+       
     }
 
 
-    private void Shoot(){
-        
-        if((newKstate.IsKeyDown(Keys.Space) && oldkState.IsKeyUp(Keys.Space)) || newKstate.IsKeyDown(Keys.E)){
-            bullet bullet = new bullet(texture,new(position.X + hitbox.Width/2, position.Y+30)); 
-            bullets.Add(bullet);
-        }
-    }
+    
 
     private void Move(){
     
@@ -102,9 +89,6 @@ namespace spaceshhoter
 
     public void Draw(SpriteBatch spriteBatch){
         spriteBatch.Draw(texture,hitbox,Color.White);
-        foreach(bullet b in bullets){
-            b.Draw(spriteBatch);
         }
-    }
     }
 }
