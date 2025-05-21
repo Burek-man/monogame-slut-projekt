@@ -167,7 +167,7 @@ public class Game1 : Game
             base.Update(gameTime);
 
             float currentSpeed = objectVelocity.Length() / (float)gameTime.ElapsedGameTime.TotalSeconds;
-
+            
             float needleAngle = MathHelper.ToRadians(-135f) +
                 (MathHelper.ToRadians(270f) * (currentSpeed / maxSpeed));
             needleAngle = MathHelper.Clamp(needleAngle, MathHelper.ToRadians(-135f), MathHelper.ToRadians(135f));
