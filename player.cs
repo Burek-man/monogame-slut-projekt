@@ -14,7 +14,6 @@ namespace spaceshhoter
         private KeyboardState newKstate;
         private float speed = 0;
         private KeyboardState oldkState;
-        private float hp;
 
 
  
@@ -30,15 +29,12 @@ namespace spaceshhoter
             pixelSize,(int)(pixelSize*1.5f));
 
         }
-    public void Update(){
-        newKstate = Keyboard.GetState();
-       Move();
-       
-        oldkState = newKstate;
-
-       
-       
-    }
+    public void Update(GameTime gameTime){
+            newKstate = Keyboard.GetState();
+            Move();
+            oldkState = newKstate;
+       }
+    
 
 
     
