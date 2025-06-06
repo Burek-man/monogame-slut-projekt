@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using SharpDX.XInput;
 
 namespace spaceshhoter;
 
@@ -64,6 +65,7 @@ public class Game1 : Game
         objectPosition = new Vector2(400, 240);
     }
 
+
     protected override void LoadContent()
     {
 
@@ -72,9 +74,9 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
         speedometerDial = Content.Load<Texture2D>("speedometerDial");
-        
+
         needle = Content.Load<Texture2D>("needle");
-        
+
         font = Content.Load<SpriteFont>("Font"); // Add a SpriteFont
 
         needleOrigin = new Vector2(needle.Width / 2f, needle.Height);
@@ -90,9 +92,9 @@ public class Game1 : Game
 
         meny = Content.Load<SpriteFont>("File1");
 
-        player = new Player(dacia,new Vector2(380,250),150);
+        player = new Player(dacia, new Vector2(380, 250), 150);
 
-        
+
         theme = Content.Load<Song>("youtube_tjvz3ZHx5Ls_audio");
         MediaPlayer.Play(theme);
 
@@ -103,8 +105,7 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        
-             player.Update();
+        player.Update(gameTime);
         camera.UpdateCamera(GraphicsDevice.Viewport,player.Hitbox.Location.ToVector2());
 
 }
@@ -121,29 +122,31 @@ public class Game1 : Game
         if (_gameState == GameStates.Menu)
         {
             _spriteBatch.Begin();
-            Rectangle bgRect = new(0,0,800,480);
-            _spriteBatch.Draw(backroundtexturemeny, bgRect, Color.White);   
-            _spriteBatch.DrawString(meny, "Dacia Duster The Game", new Vector2(225,100), Color.Azure); 
+            Rectangle bgRect = new(0, 0, 800, 480);
+            _spriteBatch.Draw(backroundtexturemeny, bgRect, Color.White);
+            _spriteBatch.DrawString(meny, "Dacia Duster The Game", new Vector2(225, 100), Color.Azure);
+            _spriteBatch.End();
         }
-        else if(_gameState== GameStates.Playing || _gameState == GameStates.GameOver){
+        
+        else if (_gameState == GameStates.Playing || _gameState == GameStates.GameOver)
 
-            _spriteBatch.Begin(SpriteSortMode.Deferred,null,null,null,null,null,camera.Transform);
-            for(int i = -100; i < 100; i++) {
-                Rectangle rect = new(0, 600*i, 800, 600);
+        {
+
+            _spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, camera.Transform);
+            for (int i = -100; i < 100; i++)
+            {
+                Rectangle rect = new(0, 600 * i, 800, 600);
                 _spriteBatch.Draw(backround, rect, Color.White);
             }
-            
+
             player.Draw(_spriteBatch);
 
 
 
             _spriteBatch.End();
-            _spriteBatch.Begin();
 
-            Rectangle bgRect = new(0,0,800,480);
-            _spriteBatch.Draw(backround, bgRect,Color.White);
-       
-        
+
+            _spriteBatch.Begin();
             var kstate = Keyboard.GetState();
 
             objectVelocity = Vector2.Zero;
@@ -163,31 +166,31 @@ public class Game1 : Game
 
             base.Update(gameTime);
 
+            float currentSpeed = objectVelocity.Length() / (float)gameTime.ElapsedGameTime.TotalSeconds;
             
-
-        float currentSpeed = objectVelocity.Length() / (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            float needleAngle = MathHelper.ToRadians(-135f) + 
+            float needleAngle = MathHelper.ToRadians(-135f) +
                 (MathHelper.ToRadians(270f) * (currentSpeed / maxSpeed));
             needleAngle = MathHelper.Clamp(needleAngle, MathHelper.ToRadians(-135f), MathHelper.ToRadians(135f));
 
 
-            // Draw speedometer dial
-            _spriteBatch.Draw(speedometerDial, dialPosition, Color.White);
+
 
             // Draw rotating needle
-            _spriteBatch.Draw(needle,
-                dialPosition + new Vector2(speedometerDial.Width / 2f, speedometerDial.Height / 2f),
-                null,
-                Color.Red,
-                needleAngle,
-                needleOrigin,
-                1f,
-                SpriteEffects.None,
-                0f);
+            _spriteBatch.Draw(needle, dialPosition + new Vector2(speedometerDial.Width / 2f, speedometerDial.Height / 2f),
+                            null, Color.White, needleAngle, needleOrigin, 10f, SpriteEffects.None, 0f);
+
+
+            // Draw speedometer dial
+            _spriteBatch.Draw(speedometerDial, new Rectangle(dialPosition.ToPoint(), new Point(200, 200)), Color.White);
+
+
+            _spriteBatch.End();
+
+
+
+
 
         }    
-        _spriteBatch.End();
 
 
 
