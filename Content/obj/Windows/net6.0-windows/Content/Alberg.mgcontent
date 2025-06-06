@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/Alberg.png</SourceFile>
-  <SourceTime>2025-04-04T10:05:39.6558304+02:00</SourceTime>
-  <DestFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/bin/Windows/Content/Alberg.xnb</DestFile>
-  <DestTime>2025-04-09T09:03:40.9832163+02:00</DestTime>
+  <SourceFile>C:/Github/monogame-slut-projekt/Content/Alberg.png</SourceFile>
+  <SourceTime>2025-05-12T08:12:53.3887233+02:00</SourceTime>
+  <DestFile>C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/Alberg.xnb</DestFile>
+  <DestTime>2025-05-12T08:14:33.1859619+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

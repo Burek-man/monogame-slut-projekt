@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/youtube_tjvz3ZHx5Ls_audio.mp3</SourceFile>
-  <SourceTime>2025-04-23T11:04:16.4445822+02:00</SourceTime>
-  <DestFile>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/bin/Windows/Content/youtube_tjvz3ZHx5Ls_audio.xnb</DestFile>
-  <DestTime>2025-04-23T11:06:20.5424124+02:00</DestTime>
+  <SourceFile>C:/Github/monogame-slut-projekt/Content/youtube_tjvz3ZHx5Ls_audio.mp3</SourceFile>
+  <SourceTime>2025-05-12T08:12:53.890428+02:00</SourceTime>
+  <DestFile>C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/youtube_tjvz3ZHx5Ls_audio.xnb</DestFile>
+  <DestTime>2025-05-12T08:14:46.8363599+02:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/Admin/Documents/GitHub/monogame-slut-projekt/Content/bin/Windows/Content/youtube_tjvz3ZHx5Ls_audio.wma</string>
+    <string>C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/youtube_tjvz3ZHx5Ls_audio.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

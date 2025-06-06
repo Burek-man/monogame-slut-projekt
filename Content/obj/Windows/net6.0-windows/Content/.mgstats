@@ -1,1 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Github/monogame-slut-projekt/Content/Alberg.png","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/Alberg.xnb","TextureProcessor","Texture2DContent",87872,345685,0,3454481
+"C:/Github/monogame-slut-projekt/Content/background-road.png","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/background-road.xnb","TextureProcessor","Texture2DContent",29846,2184085,0,1898042
+"C:/Github/monogame-slut-projekt/Content/dacia.png","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/dacia.xnb","TextureProcessor","Texture2DContent",254604,3600085,0,3323742
+"C:/Github/monogame-slut-projekt/Content/File1.spritefont","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/File1.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0,3431078
+"C:/Github/monogame-slut-projekt/Content/font.spritefont","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0,0420343
+"C:/Github/monogame-slut-projekt/Content/speedometerDial.png","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/speedometerDial.xnb","TextureProcessor","Texture2DContent",40466,1048661,0,0897469
+"C:/Github/monogame-slut-projekt/Content/youtube_tjvz3ZHx5Ls_audio.mp3","C:/Github/monogame-slut-projekt/Content/bin/Windows/Content/youtube_tjvz3ZHx5Ls_audio.xnb","SongProcessor","SongContent",7474556,143,11,133421
